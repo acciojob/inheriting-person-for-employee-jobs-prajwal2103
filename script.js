@@ -37,9 +37,10 @@ Employee.prototype.__proto__=Person.prototype;
 Employee.prototype.jobGreet=function(){
 	console.log(`Hello, my name is ${this.name}, I am ${this.age} years old,and job title is ${this.jobTitle}.`)
 }
-
-let person=new Employee("Alice",30,"Manager");
-person.jobGreet();
+let person=new Person("Alice",25);
+person.greet();
+let Employee=new Employee("Bob",30,"Manager");
+Employee.jobGreet();
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
