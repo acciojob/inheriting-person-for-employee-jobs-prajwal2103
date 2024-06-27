@@ -41,9 +41,6 @@ Employee.prototype.jobGreet=function(){
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
-let person=new Person("Alice",25);
-person.greet();
-let employee=new Employee("Bob",30,"Manager");
-employee.jobGreet();
+
 
 
